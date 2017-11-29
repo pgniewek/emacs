@@ -6,7 +6,7 @@ C = Ctrl (Capital "C" is reserved for the Ctrl key)
 
 M = Alt  (Capital "M" is reserved for the Alt  key)
 
-C-x C-s = Hold Ctrl key and press "c" key, release "c" (while holding Ctrl), and press "s".
+C-x C-s = Hold Ctrl key and press "x" key, release "x" (while holding Ctrl), and press "s".
 
 RET = Press the Enter key
 
