@@ -29,7 +29,7 @@ C-x [rightarrow] or C-x [leftarrow] = Cycle through open buffers
 ## Copy and paste
 
 | Code | emacs name     | conventional name    |
-------------------------------------------------
+|------|----------------|----------------------|
 | C-w  | kill           | cut (usual Ctrl+x)   |
 | M-w  | kill-ring-save | copy (usual Ctrl+c)  |
 | C-y  | yank           | paste (usual Ctrl+v) |
