@@ -12,19 +12,40 @@ RET = Press the Enter key
 
 ## Basic commands
 
+C-g     = Abort command input (use to recover from mistakes in commands)
+
 C-x C-c = Quit emacs
 
 C-x C-f = Open a file
 
 C-x C-s = Save the current buffer to a file
 
-C-x o   = Toggle active frames in emacs window
-
 C-x C-b = Display the list of active buffers
 
 C-x k   = Kill a buffer
 
 C-x [rightarrow] or C-x [leftarrow] = Cycle through open buffers 
+
+## Copy and paste
+
+| Code | emacs name     | conventional name    |
+------------------------------------------------
+| C-w  | kill           | cut (usual Ctrl+x)   |
+| M-w  | kill-ring-save | copy (usual Ctrl+c)  |
+| C-y  | yank           | paste (usual Ctrl+v) |
+| M-y  | yank next      |           -          |
+
+## Frames 
+
+C-x o ('oh' character) = Toggle active frames in emacs window
+
+C-x 0 (zero character) = Close frame
+
+C-x 1 = Maximize frame
+
+C-x 2 = Split (duplicate) frame horizontally 
+
+C-x 3 = Split (duplicate) frame vertically 
 
 ## LaTeX-related commands (in a buffer associated with a *.text file)
 
@@ -42,4 +63,4 @@ M-x ielm = Start an interactive elisp session, analogus to a shell session in a 
 
 ## Misc.
 
-You don't have to be afraid of editing `.emacs` in vi -- I've tried that and it doesn't cause any overflows in the Big Computer In The Sky. 
+You don't have to be afraid of editing `.emacs` in `vi` -- I've tried that and it doesn't cause any overflows in the Big Computer In The Sky. 
