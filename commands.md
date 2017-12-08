@@ -35,6 +35,22 @@ C-x [rightarrow] or C-x [leftarrow] = Cycle through open buffers
 | C-y  | yank           | paste (usual Ctrl+v) |
 | M-y  | yank next      |           -          |
 
+## Moving in text; selecting text = similar (almost identical) to other modern editors
+
+Hold [CTRL] and press right-/leftarrow = Move coursor over whole words
+
+Hold [CTRL] and press up-/down-arrow = Move coursor over whole paragraphs
+
+Hold [SHIFT] and press right-/left-/up-/down-arrow = Select consecutive characters. Can be combined with [CTRL] to select whole words/paragraphs. 
+
+[HOME] = Jump to the beginning of the active line
+
+[END] = Jump to the end of the active line
+
+[CTRL] + [HOME] = Jump to the begining of the file
+
+[CTRL] + [END] = Jump to the end of the file
+
 ## Frames 
 
 C-x o ('oh' character) = Toggle active frames in emacs window
@@ -47,7 +63,17 @@ C-x 2 = Split (duplicate) frame horizontally
 
 C-x 3 = Split (duplicate) frame vertically 
 
-## LaTeX-related commands (in a buffer associated with a *.text file)
+## Coding-related
+
+M-; = comment-dwim (Do What I Mean) = comment or uncomment a selection
+
+C-x h = Select whole buffer
+
+C-x h [TAB] = format source code (add indentations, etc.)
+
+[TAB] = format selected text (as above, but applied only to a selection)
+
+## LaTeX-related commands (in a buffer associated with a *.tex file)
 
 C-c C-c = If it's the first time since the file was saved, then invoke `pdflatex`. If it's the second time, then view the file with `docview`.
 
