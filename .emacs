@@ -4,9 +4,9 @@
 ;; (require 'helm)
 
 ;; Enable package retrieval from the Internet repositories
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                     ("marmalade" . "http://marmalade-repo.org/packages/")
-                     ("melpa" . "http://melpa.org/packages/")))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                     ("marmalade" . "https://marmalade-repo.org/packages/")
+                     ("melpa" . "https://melpa.org/packages/")))
 
 ;; Maximize emacs window at startup
 (custom-set-variables
@@ -55,3 +55,28 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 128 :width normal)))))
+
+;; additional helm configuration
+(defvar helm-M-x-fuzzy-match t)
+(defvar helm-buffers-fuzzy-matching)
+(defvar helm-recentf-fuzzy-match)
+(global-set-key (kbd "C-x b") 'helm-mini)
+(setq helm-buffers-fuzzy-matching t)
+(setq helm-recentf-fuzzy-match t)
+(global-set-key "\C-x\ \C-r" 'helm-recentf)
+(global-set-key (kbd "C-k") 'kill-whole-line)
+
+;; The below commands do not work:
+;; (package-install 'better-defaults)
+;; (require 'better-defaults)
+;; I get the following information: 
+;; Required package 'better-defaults' is disabled
+;; Instead I downloaded the package from github.com and added it manually:   
+(add-to-list 'load-path "/home/pgniewek/.emacs.d/more-packages/better-defaults-master")
+(require 'better-defaults)
+
+;; The below config option hangs emacs upon startup ... :(
+;; (add-hook 'after-init-hook 'global-company-mode)
+
+
+
