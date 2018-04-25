@@ -35,6 +35,18 @@ C-x [rightarrow] or C-x [leftarrow] = Cycle through open buffers
 | C-y  | yank           | paste (usual Ctrl+v) |
 | M-y  | yank next      |           -          |
 
+## Searching in text 
+
+C-s = Incremental search forward
+C-r = Incremental search backward 
+
+## Undo and redo 
+
+C-/ = undo
+C-x u = undo, alias of the above command
+
+C-/ C-f C-/ = undo the last undo i.e. redo (C-f is "character forward", and breaks undo cycle)
+
 ## Moving in text; selecting text = similar (almost identical) to other modern editors
 
 Hold [CTRL] and press right-/leftarrow = Move coursor over whole words
